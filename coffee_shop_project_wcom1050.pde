@@ -76,6 +76,17 @@ void drawAwning(int x, int y) {
   float stripeWidth = 20;
 
   rectMode(CORNER); // draw stripes left-to-right
+/*
+   * Purpose:
+   * This for-loop creates the striped awning above the coffee house windows.
+   * - The loop divides the awning width into equal vertical stripes.
+   * - The if-else branching alternates the fill color of each stripe:
+   *   even indexes (i % 2 == 0) are dark brown,
+   *   odd indexes are light brown.
+   * - This produces a realistic striped canopy look, adding visual appeal
+   *   to the coffee shop illustration.
+   */
+
   for (int i = 0; i < awningWidth / stripeWidth; i++) {
     if (i % 2 == 0) {
       fill(112, 85, 60);  // dark brown
