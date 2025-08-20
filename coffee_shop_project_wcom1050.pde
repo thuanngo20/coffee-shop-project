@@ -78,9 +78,9 @@ void drawAwning(int x, int y) {
   rectMode(CORNER); // draw stripes left-to-right
   for (int i = 0; i < awningWidth / stripeWidth; i++) {
     if (i % 2 == 0) {
-      fill(112, 85, 60);  // Dark brown
+      fill(112, 85, 60);  // dark brown
     } else {
-      fill(188, 155, 130); // Light brown
+      fill(188, 155, 130); // light brown
     }
     rect(leftEdge + i * stripeWidth, y - awningHeight, stripeWidth, awningHeight);
   }
